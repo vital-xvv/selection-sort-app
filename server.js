@@ -27,7 +27,7 @@ function makeANiceLine(array) {
 
 // ---------- Creating Server ---------- //
 const server = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 8000;;
 server.set('view engine', 'ejs');
 server.listen(PORT, 'localhost', (error) => {
     if(error) console.log(error);
