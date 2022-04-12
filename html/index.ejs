@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900;&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <div class="logo">
+          <ion-icon id="icon" name="funnel-outline"></ion-icon>
+          <h1 class="header">Selection Sort</h1>
+        </div>
+        <p>Sort your arrays of numbers using Selection Sort!</p>
+        <form class="inputbox" method="post" action="/result" enctype='multipart/form-data'>
+            <div class="form-section">
+                <label for="arrayinp">Array:</label>
+                <input type="text" class="array-input" placeholder="Example: 11, 4, 3, 12, 123, 12" id="arrayinp" name="array" />
+            </div>
+            <div class="form-section">
+                <label class="form_label">Generate array?</label>
+                <div class="options_item">
+                    <input id="generateYes" type="radio" value="true" name="generate" class="options_input">
+                    <label for="generateYes" class="options_label"><span>Yes</span></label>
+                </div> 
+                <div class="options_item">
+                    <input id="generateNo" type="radio" value="false" checked name="generate" class="options_input">
+                    <label for="generateNo" class="options_label"><span>No</span></label>
+                </div>
+            </div>
+            <div class="form-section">
+                <label for="number">Number of elements in generated array: </label>
+                <input type="text" class="number-input" id="number" placeholder="Example: 11" name="numberOfElements"/>
+            </div>
+            <div class="footer">
+                <div id="chooseFile">Read .JSON
+                <input type="file" accept=".json" class="take-file" id="file" name='file'/>
+                </div>
+                <a id="butsortGraphs" href="/graphs">Graphs</a>
+                <div id="butsort">Sort
+                <input type="submit" value="Sort" id="sort" />
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="box2">
+          <div>
+          <img src="/pool-billiard4.jpg" alt="" class="image">
+            </div>
+      </div>
+      <div class="box2">
+
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/jquery-3.6.0.min.js"></script>
+    <script src="/pade.js"></script>
+  </body>
+</html>
